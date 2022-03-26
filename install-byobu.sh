@@ -7,7 +7,7 @@ rm $0
 sudo apt-get install -yqqq xclip
 
 # install byobu and add (might cause duplicates) it to the list of shells
-sudo apt install -y byobu && which byobu | sudo tee -a /etc/shells
+sudo apt install -y byobu screen && which byobu | sudo tee -a /etc/shells
 
 # fix the reuse session bug
 mkdir -p ~/.byobu
